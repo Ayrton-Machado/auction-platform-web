@@ -1,0 +1,76 @@
+/*Corpo*/
+header {
+    height: max-content;
+    width: 100vw;
+    font-family: 'Inter', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.head {
+    background-color: rgb(18, 60, 83, 0.90);
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Topo*/
+
+.head-img-container, .head-img-container img {
+    height: 100%;
+    width: auto;
+}
+
+.head-content-container {
+    color: rgb(238, 189, 73);
+    font-size: 1vw;
+}
+.head-content-container h1 {
+    font-weight: 400;
+}
+
+/* bem vindo .. intro usuario */
+
+.sub-head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(18, 60, 83, 0.90);
+    background-color: white;
+}
+
+.sub-head-intro {
+    gap: 5px;
+    display: flex;
+    flex-direction: row;
+}
+
+.sub-head-intro h3 {
+    margin: 1vh 0 2vh 0;
+}
+
+.sub-head-user {
+    color: rgb(238, 189, 73);
+}
+
+/* Menu navegacao */
+
+.menu-itens {
+    display: flex;
+    gap: 10vw;
+}
+
+.menu-itens a {
+    all: unset;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.2rem;
+
+    transition: all 0.2s ease-in;
+}
+
+.menu-itens a:hover {
+    transform: scale(1.05);
+    color: rgb(238, 189, 73);
+}
