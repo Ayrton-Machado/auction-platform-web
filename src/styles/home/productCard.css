@@ -1,0 +1,48 @@
+.productCard {
+    width: 100%;
+    height: 29vh;
+    padding: 20px;
+    background-color: rgb(18, 60, 83, 0.9);
+    border-radius: 1vh;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.productCard:hover {
+    transform: scale(1.015);
+}
+
+.productCard a {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+.productCard-img {
+    height: 25vh;
+    width: 15vw;
+    border: 1px solid rgb(238, 189, 73);
+    border-radius: 1vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.productCard-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+.productCard-content {
+    font-family: 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(238, 189, 73);
+}
+
+.productCard-content p {
+    width: 30vw;
+    font-weight: 300;
+}

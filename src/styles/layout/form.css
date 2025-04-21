@@ -1,0 +1,67 @@
+.form-container {
+    font-family: 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 5vh 25vw;
+}
+
+.page-title {
+    padding: 0;
+    margin: 5vh 0;
+    text-align: center;
+    color: rgb(18, 60, 83, 0.90);
+    font-weight: 400;
+    font-family: 'Inter', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.input-group {
+    margin-left: 0;
+}
+
+.form-control-custom {
+    padding: 5px 10px;
+    border: solid 1px rgb(18, 60, 83, 0.90);
+
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.form-control-custom:focus {
+    border: 1px solid rgb(238, 189, 73);
+    outline: none; /* optional: removes blue browser outline */
+    box-shadow: 0 0 2px rgb(238, 189, 73); /* optional: glowing effect */
+}
+
+.input-group-custom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2vh 0;
+}
+
+.input-group-prepend span, .input-group-prepend select {
+    border-radius: 0;
+    font-size: 18px;
+    border: solid 1px rgb(18, 60, 83, 0.90);
+    background-color: rgb(18, 60, 83, 0.90);
+    color: rgb(238, 189, 73);
+}
+
+.input-group-prepend select {
+    padding: 1vh 5vw;
+    border-radius: 6px;
+}
+
+.btn-custom {
+    color: rgb(238, 189, 73);
+    background-color: rgb(18, 60, 83, 0.90);
+    padding: 0.7vh 3vw;
+    font-weight: bold;
+
+    transition: all 0.1s ease-in;
+}
+
+.btn-custom:hover {
+    background-color: rgb(238, 189, 73);
+    color: rgb(18, 60, 83, 0.90);
+    box-shadow: 0 0 8px rgb(238, 189, 73); /* optional: glowing effect */
+}

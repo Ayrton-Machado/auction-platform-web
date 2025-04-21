@@ -1,4 +1,5 @@
-import '../styles/header.css'
+import '../styles/layout/header.css'
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -6,7 +7,7 @@ function Header() {
             <header>
                 <div className="head">
                     <div className="head-img-container">
-                        <img src="https://sdmntprsouthcentralus.oaiusercontent.com/files/00000000-3390-61f7-b65a-84f782bc9c1d/raw?se=2025-04-19T16%3A49%3A28Z&sp=r&sv=2024-08-04&sr=b&scid=e54d7318-d74e-53f5-92be-4719b94a17c1&skoid=cbbaa726-4a2e-4147-932c-56e6e553f073&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-18T19%3A48%3A36Z&ske=2025-04-19T19%3A48%3A36Z&sks=b&skv=2024-08-04&sig=jfo9xhrsLV%2BaqVS2MrPNOLMTXC5jkFd/U9fBGAbb3HY%3D" alt="" />
+                        <img src="https://i.imgur.com/bhWcOga.png" alt="" />
                     </div>
                     <div className="head-content-container">
                         <h1>e-Auction</h1>
@@ -19,15 +20,23 @@ function Header() {
                     </div>
                     <div className="menu">
                         <div className="menu-itens">
-                            <a href="#">Listings</a>
-                            <a href="#">Categories</a>
-                            <a href="#">WatchList</a>
-                            <a href="#">Create Listing</a>
-                            <a href="#">Log Out</a>
+                            <Link to="/">Listings</Link>
+                            <a className="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                            </a>
+                            <div className="dropdown-menu dropdown-menu-custom" aria-labelledby="navbarDropdownMenuLink">
+                                <a className="dropdown-item" href="#">All</a>
+                                <a className="dropdown-item" href="#">Categories</a>
+                                <a className="dropdown-item" href="#">Here</a>
+                            </div>
+                            <Link to="/watchlist">WatchList</Link>
+                            <Link to="/create">Create Listing</Link>
+                            <Link to="/login">Login</Link>
+                            <Link to="">Log Out</Link>
+                            <Link to="/register">Register</Link>
                         </div>
                     </div>
                 </div>
-
             </header>
         </>
     )
