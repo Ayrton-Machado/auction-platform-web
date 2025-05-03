@@ -3,8 +3,14 @@ html {
     padding: 0;
 }
 
+/*rgb(238, 189, 73) amareol*/
+/*rgb(18, 60, 83, 0.90) azul*/
+
 body {
+    background-color: rgb(18, 60, 83, 0.40);
+    background-color: rgb(241, 250, 255);
     margin: 0;
     width: 100vw;
     height: max-content;
+    overflow-x: hidden;
 }

@@ -1,0 +1,73 @@
+.listing_body {
+    margin: 3vh 5vw;
+}
+
+.images-group {
+    display: flex;
+    justify-content: center;
+    cursor: grab;
+}
+
+.carousel-images {
+    display: flex;
+    justify-content: center;
+    gap: 1vw;
+}
+
+.imgPrincipal {
+    aspect-ratio: 1;
+    width: 29vw;
+
+    border: 1px solid rgb(238, 189, 73);
+    border-radius: 1vh;
+    overflow: hidden;
+}
+
+.imgPrincipal img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.custom-arrow {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 50%;
+    height: 100%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgb(18, 60, 83, 0.9);
+    transition: all 0.2s ease-in;
+}
+
+.custom-arrow:hover {
+    color: rgb(238, 189, 73);
+    transform: translateY(-50%) scale(1.09);
+}
+
+.custom-arrow.prev {
+left: -40px;
+}
+
+.custom-arrow.next {
+right: -40px;
+}
+
+.content {
+    border: solid 1px rgb(18, 60, 83, 0.9);
+    background-color: rgb(18, 60, 83, 0.95);
+    border-radius: 2vh;
+    height: max-content;
+    width: 90vw;
+
+    
+    transform: scale(0.98, 1.05);
+    
+    box-shadow: 0 10px 25px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}

@@ -6,18 +6,20 @@ function Header() {
         <>
             <header>
                 <div className="head">
-                    <div className="head-img-container">
-                        <img src="https://i.imgur.com/bhWcOga.png" alt="" />
+                    <div className='head-intro'>
+                        <h3>Sr(a). </h3>
+                        <h3 className='head-user'>Usuário</h3>
                     </div>
-                    <div className="head-content-container">
-                        <h1>e-Auction</h1>
+                    <div className='head-main'>
+                        <div className="head-img-container">
+                            <img src="https://i.imgur.com/bhWcOga.png" alt="" />
+                        </div>
+                        <div className="head-content-container">
+                            <h1>e-Auction</h1>
+                        </div>
                     </div>
                 </div>
                 <div className="sub-head">
-                    <div className='sub-head-intro'>
-                        <h3>Bem, Vindo! Sr(a). </h3>
-                        <h3 className='sub-head-user'>Usuário</h3>
-                    </div>
                     <div className="menu">
                         <div className="menu-itens">
                             <Link to="/">Listings</Link>

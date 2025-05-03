@@ -1,4 +1,4 @@
-import "../styles/home/productCard.css"
+import "../styles/layout/productCard.css"
 
 function ProductCard() {
     return (
@@ -9,9 +9,13 @@ function ProductCard() {
                         <img src="https://i.pinimg.com/736x/07/11/1c/07111c2aa37af4d4bb7a3a9e419144a0.jpg" alt="title" />
                     </div>
                     <div className="productCard-content">
-                        <h3> title </h3>
-                        <p> descriptionaaaaaaaaaaaaaaaa aaaaaaaaa aaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaaaaa aaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaa
+                        <h3> Title </h3>
+                        <p> descriptionaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                         </p>
                         <h4> R$ bidstart</h4>
                         <p style={{ fontSize: "12px" }}>Category:</p>
