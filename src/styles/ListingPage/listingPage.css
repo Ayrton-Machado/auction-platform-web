@@ -1,7 +1,9 @@
+/*Layout*/
 .listing_body {
     margin: 3vh 5vw;
 }
 
+/*Slide*/
 .images-group {
     display: flex;
     justify-content: center;
@@ -58,16 +60,76 @@ left: -40px;
 right: -40px;
 }
 
+/*Item infos layout*/
+
 .content {
     border: solid 1px rgb(18, 60, 83, 0.9);
     background-color: rgb(18, 60, 83, 0.95);
     border-radius: 2vh;
     height: max-content;
     width: 90vw;
-
+    padding: 2vh 2vw;
+    color: white;
     
     transform: scale(0.98, 1.05);
     
     box-shadow: 0 10px 25px 1px rgba(0, 0, 0, 0.3);
     z-index: 1;
 }
+
+.input-group-custom {
+    margin-top: 1vh;
+}
+
+.btn-custom {
+    color: rgb(18, 60, 83, 0.90);
+    background-color: rgb(238, 189, 73);
+    margin: 1vh 0;
+    width: 20%;
+    transition: all 0.1s ease-in;
+}
+
+.btn-custom:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 8px rgb(238, 189, 73); /* optional: glowing effect */
+}
+
+.btn-close_auction {
+    font-weight: bold;
+    color: white;
+    background-color: rgb(240, 16, 16);
+}
+
+.btn-close_auction:hover {
+    background-color: rgba(255, 0, 0, 0.774);
+    transform: scale(1.02);
+}
+
+label, .category {
+    font-weight: bold;
+    font-size: 18px;
+    color: rgb(238, 189, 73);
+}
+
+.price {
+    font-size: 2.5vw;
+}
+
+/*Input*/
+
+.form-control-custom {
+    flex: none;
+    padding: 7px 10px;
+    border-radius: 0.375rem;
+    width: 20vw;
+}
+
+.input-group-text {
+    color: rgb(18, 60, 83, 0.90);
+    background-color: rgb(238, 189, 73);
+}
+
+/*details*/
+
+
+

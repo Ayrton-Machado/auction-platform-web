@@ -7,6 +7,7 @@ html {
 /*rgb(18, 60, 83, 0.90) azul*/
 
 body {
+    font-family: 'Hanken Grotesk', 'Inter', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: rgb(18, 60, 83, 0.40);
     background-color: rgb(241, 250, 255);
     margin: 0;

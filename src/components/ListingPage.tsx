@@ -1,4 +1,5 @@
 import "../styles/ListingPage/listingPage.css";
+import "../styles/layout/form.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -80,52 +81,68 @@ const ListingPage: React.FC = () => {
         ))}
       </Slider>
 
-        <div className="content">
-            <div className="infoItem">
-                <h1></h1>
-                <p className="category"></p>
-                <h3 className="price">R$ </h3>
+      <div className="content">
+        <div className="infoItem">
+          <h1>Item Title</h1>
+          <p className="category">Category</p>
+          <h3 className="price">R$ </h3>
+          <form id="close-auction-form">
+              <button className="btn btn-close_auction" type="submit" name="close">Close Auction</button>
+          </form>
 
-                <div className="buttonBid">
-                    <form id="close-auction-form">
-                        <button type="submit" name="close">Close Auction</button>
-                    </form>
+          <div className="bids input-group-custom">
+            <p className="auction-status" style={{ marginTop: '1vh' }}><strong>Status:</strong></p>
 
-                    <p className="auction-status"><strong></strong></p>
-                    <form id="place-bid-form">
-                        <input type="text" id="bid" name="placebid" placeholder="Your bid" />
-                        <input type="submit" value="Place Bid" />
-                    </form>
-
-                    <select id="bid-list" disabled>
-                        <option>0 Bids</option>
-                        <option disabled>Username : R$ Value</option>
-                    </select>
+            <form id="place-bid-form">
+              <label htmlFor="place-bid-form">Place Your Bid</label>
+              <div className="input-group">
+                <div className="input-group-prepend">
+                  <span className="input-group-text" style={{ color: 'rgb(18, 60, 83, 0.90)', backgroundColor: 'rgb(238, 189, 73)' }}>R$</span>
                 </div>
+                <input
+                  type="number"
+                  className="form-control-custom"
+                  id="bid"
+                  name="placebid"
+                  placeholder="0.00"
+                  step="0.1"
+                  min="0"
+                />
+              </div>
+              <button className="btn btn-custom" type="submit">Place Bid</button>
+            </form>
+            <div className="form-control-custom" style={{ border: "none" }}>
+              <label htmlFor="bid-list">Bid List</label>
+              <select id="bid-list" className="form-control-custom">
+                <option>0 Bids</option>
+                <option disabled>Username : R$ Value</option>
+              </select>
             </div>
-
-            <div className="details">
-                <h2>Details</h2>
-                <form id="watchlist-form">
-                    <button type="submit" name="addWatchlist">Add to WatchList</button>
-                </form>
-
-                <p className="description"></p>
-                <ul>
-                    <li><p>Category: <span className="detail-category"></span></p></li>
-                    <li><p>Created By: <span className="created-by"></span></p></li>
-                </ul>
-
-                <form id="comment-form">
-                    <input type="text" name="comment" placeholder="add a comment" />
-                </form>
-
-                <div id="comment-list">
-                    <h5>Username</h5><p>Comment</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+
+        <div className="details">
+          <h2>Details</h2>
+          <ul>
+              <li><p>Category: <span className="detail-category"></span></p></li>
+              <li><p>Created By: <span className="created-by"></span></p></li>
+          </ul>
+          <form id="watchlist-form" className="input-group-custom">
+              <button className="btn btn-custom" type="submit" name="addWatchlist">Add to WatchList</button>
+          </form>
+
+          <form id="comment-form" className="input-group-custom">
+            <label htmlFor="comment-form">Add a Comment</label>
+              <textarea className="form-control-custom" rows={2} name="comment" placeholder="add a comment" />
+          </form>
+
+          <div id="comment-list">
+              <h4>Username</h4>
+              <p>Comment</p>
+          </div>
+        </div>
+      </div>
+    </div>  
   );
 };
 

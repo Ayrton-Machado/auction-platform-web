@@ -20,7 +20,7 @@ export default function CreateListing() {
                     <div className="input-group-prepend">
                         <span className="input-group-text">Description</span>
                     </div>
-                    <textarea className="form-control-custom" aria-label="With textarea" name="description" placeholder="Describe your product"></textarea>
+                    <textarea className="form-control-custom" rows={2} aria-label="With textarea" name="description" placeholder="Describe your product"></textarea>
                 </div>
         
         
