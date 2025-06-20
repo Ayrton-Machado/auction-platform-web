@@ -1,27 +1,43 @@
 import "../styles/layout/productCard.css"
 
-function ProductCard() {
+export interface Auctions {
+    "id": number,
+    "title": string,
+    "description": string,
+    "bidstart": number,
+    "urlImage": string,
+    "createdBy_id": number,
+    "category_id": number,
+    "closed": boolean
+}
+
+interface ProductCardProps {
+    auction: Auctions;
+}
+
+function ProductCard({ auction }: ProductCardProps) {
     return (
         <>
             <div className="productCard">
                 <a id="click" style={{ textDecoration: "none", color: "black" }} href="#">
                     <div className="productCard-img">
-                        <img src="https://i.pinimg.com/736x/07/11/1c/07111c2aa37af4d4bb7a3a9e419144a0.jpg" alt="title" />
+                        <img src={auction.urlImage || 'url_da_imagem_default.jpg'} alt={auction.title} />
                     </div>
                     <div className="productCard-content">
-                        <h3> Title </h3>
-                        <p> descriptionaaaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-                        </p>
-                        <h4> R$ bidstart</h4>
-                        <p style={{ fontSize: "12px" }}>Category:</p>
-                        <p style={{ fontSize: '12px' }}>Created by:</p>
-                        <p style={{ fontWeight: "bold",fontSize: "14px", color:"rgb(129, 7, 7)" }}><strong>CLOSED</strong></p>
-                        <p style={{ fontWeight: "bold",fontSize: "14px", color:"rgb(7, 129, 24)" }}><strong>OPEN</strong></p>
+                        <h3> {auction.title} </h3>
+                        <p> {auction.description}</p>
+                        <h4> {auction.bidstart}</h4>
+                        <p style={{ fontSize: "12px" }}>Category ID: {auction.category_id}</p>
+                        <p style={{ fontSize: '12px' }}>Created by:{auction.createdBy_id}</p>
+                        {auction.closed ? (
+                            <p style={{ fontWeight: "bold", fontSize: "14px", color: "rgb(129, 7, 7)" }}>
+                                <strong>CLOSED</strong>
+                            </p>
+                        ) : (
+                            <p style={{ fontWeight: "bold", fontSize: "14px", color: "rgb(7, 129, 24)" }}>
+                                <strong>OPEN</strong>
+                            </p>
+                        )}
                     </div>
                 </a>
             </div>   
